@@ -1,0 +1,63 @@
+{
+  "Data": [
+    {
+      "id": 1,
+      "Image": "https://th.bing.com/th/id/OIP.e6900wBWa2sAD14Po7ZYKAAAAA?pid=ImgDet&rs=1",
+      "Name": "Oneplus 10R",
+      "Price": 25000,
+      "Desc": "Black 8GB 128GB"
+    },
+    {
+      "id": 2,
+      "Image": "https://th.bing.com/th/id/OIP.EhTUNAsFhJQ9Wu2inwuvYQHaHa?pid=ImgDet&rs=1",
+      "Name": "Realme GT Neo 2",
+      "Price": 25000,
+      "Desc": "Black 8GB 128GB"
+    },
+    {
+      "id": 3,
+      "Image": "https://specifications-pro.com/wp-content/uploads/2021/10/Xiaomi-Redmi-Note-11-Pro-Plus-1.jpg",
+      "Name": "Redmi note 11 pro",
+      "Price": 25000,
+      "Desc": "Black 8GB 128GB"
+    },
+    {
+      "id": 4,
+      "Image": "../assets/Images/4.jpg",
+      "Name": "Samsung S23",
+      "Price": 25000,
+      "Desc": "Black 8GB 128GB"
+    },
+    {
+      "id": 5,
+      "Image": "../assets/Images/5.jpg",
+      "Name": "Iphone 14 Pro",
+      "Price": 119000,
+      "Desc": "Deep Purple 128GB"
+    }
+  ],
+  "Cart": [
+    {
+      "id": 3,
+      "Name": "Redmi note 11 pro",
+      "Desc": "Black 8GB 128GB",
+      "Image": "https://specifications-pro.com/wp-content/uploads/2021/10/Xiaomi-Redmi-Note-11-Pro-Plus-1.jpg",
+      "Price": 25000
+    }
+  ],
+  "Login": [
+    {
+      "fullName": "Nani",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "role": "admin"
+    },
+    {
+      "fullName": "Swaroop",
+      "email": "naniswaroop01@gmail.com",
+      "password": "12345",
+      "id": 5
+    }
+  ],
+  "Contact": []
+}
