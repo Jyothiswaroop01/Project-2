@@ -7,15 +7,8 @@
     </button>
     <mat-menu #menu="matMenu">
       <button mat-menu-item (click)="profileClick()">My Profile</button>
-      <button mat-menu-item>My Orders</button><hr>
+      <button mat-menu-item (click)="orderClick()">My Orders</button><hr>
       <button mat-menu-item (click)="contactClick()">Contact</button>
       <button mat-raised-button color="warn" (click)="logout()" style="margin-left:15px">Logout</button>
     </mat-menu>
   </div><br><br>
-<mat-card>
-    <mat-card-content>
-        <p>Name: {{fullName}}</p>
-        <p>Email: {{email}}</p>
-        <p>Password: {{password}}</p>
-    </mat-card-content>
-</mat-card>

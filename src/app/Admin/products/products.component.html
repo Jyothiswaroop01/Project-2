@@ -4,7 +4,7 @@
     <img [src]="imgurl" width="50px" height="40px">
   </button>
   <mat-menu #menu="matMenu">
-    <button mat-menu-item>My Profile</button>
+    <button mat-menu-item (click)="profileClick()">My Profile</button>
     <button mat-menu-item>All Orders</button><hr>
     <button mat-menu-item (click)="Quires()">All Quires</button>
     <button mat-raised-button color="warn" (click)="logout()" style="margin-left:15px">Logout</button>

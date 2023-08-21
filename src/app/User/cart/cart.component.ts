@@ -44,5 +44,8 @@ export class CartComponent {
     this.router.navigate(['/login']);
     this.location.replaceState('/');
   }
-  buyNow(){}
+  buyNow(data:any){
+    this.serviceobj.setSharedData(data);
+    this.router.navigate(['payment']);
+  }
 }

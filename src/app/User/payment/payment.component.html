@@ -1,0 +1,40 @@
+
+<mat-card style="margin-left: 40%;width:20%;margin-top: 5%;">
+    <mat-card-header>
+      <mat-card-title>Billing Details</mat-card-title>
+    </mat-card-header><hr>
+    <mat-card-content>
+      <form #addorder="ngForm" (ngSubmit)="onSubmit(addorder)">
+        <input matInput type="text" name="Productname" [(ngModel)]="Name" required hidden>
+        <input matInput type="text" name="Description" [(ngModel)]="Desc" required hidden>
+        <input matInput type="text" name="Price" [(ngModel)]="Price" required hidden>
+        <input matInput type="text" name="Image" [(ngModel)]="Image" required hidden>
+        <mat-form-field appearance="fill">
+          <mat-label>Full Name</mat-label>
+          <input matInput type="text" name="fullName" [(ngModel)]="user.fullName" required>
+        </mat-form-field><br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Address Line-1</mat-label>
+          <input matInput type="text" name="Address-1" [(ngModel)]="user.address1" required>
+        </mat-form-field><br>
+  
+        <mat-form-field appearance="fill">
+          <mat-label>Address Line-2</mat-label>
+          <input matInput type="text" name="Address-2" [(ngModel)]="user.address2" required>
+        </mat-form-field><br>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Phone Number</mat-label>
+            <input matInput type="number" name="Phonenumber" [(ngModel)]="user.phonenumber" required>
+          </mat-form-field><br>
+
+        <mat-radio-group aria-label="Select an option">
+            <mat-radio-button value="1">Cash on Delivery</mat-radio-button>
+        </mat-radio-group>          
+  
+        <button mat-raised-button color="primary" type="submit">Confirm Order</button>
+      </form><br>
+    </mat-card-content>
+  </mat-card>
+  

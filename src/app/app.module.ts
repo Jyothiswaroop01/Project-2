@@ -22,7 +22,12 @@ import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { RegisterComponent } from './register/register.component';
 import { MatMenuModule } from '@angular/material/menu';
-import { ProfileComponent } from './profile/profile.component';
+import { MatRadioModule } from '@angular/material/radio';
+import { ProfileComponent } from './User/profile/profile.component';
+import { AdminprofileComponent } from './Admin/adminprofile/adminprofile.component';
+import { PaymentComponent } from './User/payment/payment.component';
+import { OrdersComponent } from './User/orders/orders.component';
+import { HeaderComponent } from './User/header/header.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +40,11 @@ import { ProfileComponent } from './profile/profile.component';
     ProductsComponent,
     CreateComponent,
     RegisterComponent,
-    ProfileComponent
+    ProfileComponent,
+    AdminprofileComponent,
+    PaymentComponent,
+    OrdersComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +58,8 @@ import { ProfileComponent } from './profile/profile.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatMenuModule
+    MatMenuModule,
+    MatRadioModule
   ],
   providers: [MyserviceService],
   bootstrap: [AppComponent]

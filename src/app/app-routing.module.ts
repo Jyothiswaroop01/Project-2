@@ -8,7 +8,10 @@ import { LoginComponent } from './login/login.component';
 import { ProductsComponent } from './Admin/products/products.component';
 import { CreateComponent } from './Admin/create/create.component';
 import { RegisterComponent } from './register/register.component';
-import { ProfileComponent } from './profile/profile.component';
+import { ProfileComponent } from './User/profile/profile.component';
+import { AdminprofileComponent } from './Admin/adminprofile/adminprofile.component';
+import { PaymentComponent } from './User/payment/payment.component';
+import { OrdersComponent } from './User/orders/orders.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -20,7 +23,10 @@ const routes: Routes = [
   {path:'adminproduct', component:ProductsComponent},
   {path:'addproduct', component:CreateComponent},
   {path:'register', component:RegisterComponent},
-  {path:'profile', component:ProfileComponent}
+  {path:'profile', component:ProfileComponent},
+  {path:'Adminprofile', component:AdminprofileComponent},
+  {path:'payment', component:PaymentComponent},
+  {path:'orders', component:OrdersComponent}
 ];
 
 

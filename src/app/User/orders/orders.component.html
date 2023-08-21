@@ -1,17 +1,15 @@
-<p style="text-align: center;margin: 0; font-size: 20px;">Welcome back <strong>{{fullName}}</strong></p>
 <app-header></app-header>
 <div class="row">
-    <div class="column" *ngFor="let item of items">
+    <div class="column" *ngFor="let item of orders">
         <mat-card>
             <mat-card-content>
                 <img src={{item.Image}} alt="image" style="width: 100px; height: 100px; float: left; margin-left:10%"><br>
                 <div style="float: right; margin-right: 15%;">
-                <p>{{ item.Name }}</p>
-                <p>{{ item.Desc }}</p>
+                <p>{{ item.Productname }}</p>
+                <p>{{ item.Description }}</p>
                 <p>{{ item.Price | currency }}</p></div>
                 <div style="margin-top:40%"></div>
-                <button mat-raised-button (click)="Addtocart(item)" style="margin-left:50px;">Add to Cart</button>
-                <button mat-raised-button color="primary" (click)="getProductDetails(item.id)" style="margin-left:30px">Details</button>
+                <button mat-raised-button color="primary" (click)="getOrderDetails(item.id)" style="margin-left:30px">Details</button>
             </mat-card-content>
         </mat-card>
     </div>
@@ -23,13 +21,6 @@
                 Name: {{ selectedProduct.Name }}<br>
                 Price: {{ selectedProduct.Price | currency }}<br>
                 Description: {{ selectedProduct.Desc }}<br><hr>
-                <button mat-raised-button color="warn" (click)="Addtocart(selectedProduct)"style="margin-left:30%">Add to Cart</button>
         </mat-card-content>
     </mat-card><br><br>
-</div>
-
-<div class="footer">
-    <footer>
-      <p style="text-align: center; background-color: brown;width: 100%;margin: 0%; height: 40px; padding-top: 10px;color: white; font-size: 20px;font-family: cursive;">@Copyright 2023   -   Designed by Swaroop using Angular</p>
-    </footer>
 </div>

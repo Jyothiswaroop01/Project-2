@@ -36,15 +36,7 @@
       "Desc": "Deep Purple 128GB"
     }
   ],
-  "Cart": [
-    {
-      "id": 3,
-      "Name": "Redmi note 11 pro",
-      "Desc": "Black 8GB 128GB",
-      "Image": "https://specifications-pro.com/wp-content/uploads/2021/10/Xiaomi-Redmi-Note-11-Pro-Plus-1.jpg",
-      "Price": 25000
-    }
-  ],
+  "Cart": [],
   "Login": [
     {
       "fullName": "Nani",
@@ -59,5 +51,18 @@
       "id": 5
     }
   ],
-  "Contact": []
+  "Contact": [],
+  "Orders": [
+    {
+      "Productname": "Realme GT Neo 2",
+      "Description": "Black 8GB 128GB",
+      "Price": 25000,
+      "Image": "https://th.bing.com/th/id/OIP.EhTUNAsFhJQ9Wu2inwuvYQHaHa?pid=ImgDet&rs=1",
+      "fullName": "Swaroop",
+      "Address-1": "hyd",
+      "Address-2": "hyd",
+      "Phonenumber": 9652903865,
+      "id": 1
+    }
+  ]
 }

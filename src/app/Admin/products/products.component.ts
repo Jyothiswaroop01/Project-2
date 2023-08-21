@@ -18,8 +18,9 @@ export class ProductsComponent {
 
   imgurl = 'https://th.bing.com/th/id/R.2a42d7b274bb96d8cc0976555277bea8?rik=78P3LjqrXSkA5Q&riu=http%3a%2f%2fgetdrawings.com%2ffree-icon%2fcool-profile-icons-69.png&ehk=wSrAuMrucfij0k%2bWLPOJBjzoYz1%2bz4pIUyFZ44rWOzg%3d&risl=&pid=ImgRaw&r=0';
 
-
-
+  profileClick(){
+    this.router.navigate(['Adminprofile']);
+  }
   addProduct(){
     this.router.navigate(['addproduct'])
   }
@@ -30,17 +31,6 @@ export class ProductsComponent {
       console.log(data);
       this.items = data;
     });
-  }
-  Addtocart(data:any){
-    
-    console.log(data)
-    this.serviceobj.addproduct(data).subscribe(res => {
-      console.log(res);
-      alert('Items Added Sucessfully');
-      
-    }, err => {
-
-    })
   }
   getProductDetails(productId: number) {
     this.serviceobj.getProductById(productId).subscribe(

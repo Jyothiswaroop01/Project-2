@@ -1,15 +1,14 @@
-import { Component } from '@angular/core';
-import { MyserviceService } from '../myservice.service';
-import { Router } from '@angular/router';
 import { Location } from '@angular/common';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { MyserviceService } from 'src/app/myservice.service';
 
 @Component({
-  selector: 'app-profile',
-  templateUrl: './profile.component.html',
-  styleUrls: ['./profile.component.css']
+  selector: 'app-adminprofile',
+  templateUrl: './adminprofile.component.html',
+  styleUrls: ['./adminprofile.component.css']
 })
-export class ProfileComponent {
-
+export class AdminprofileComponent {
   fullName:string="";
   email:string="";
   password:string="";
@@ -19,25 +18,21 @@ export class ProfileComponent {
 
   ngOnInit():void{
     this.userdata = this.objservice.getUserData();
+    console.log(this.userdata)
     this.fullName = this.userdata.fullName;
     this.email = this.userdata.email;
     this.password = this.userdata.password;
   }
-  contactClick(){
-    this.router.navigate(['contact']);
-  }
-  productClick(){
-    this.router.navigate(['product']);
-  }
-  cartClick(){
-    this.router.navigate(['cart']);
-  }
+
   profileClick(){
-    this.router.navigate(['profile']);
+    this.router.navigate(['Adminprofile']);
   }
+  addProduct(){
+    this.router.navigate(['addproduct'])
+  }
+  Quires(){}
   logout() {
     this.router.navigate(['/login']);
     this.location.replaceState('/');
   }
-
 }

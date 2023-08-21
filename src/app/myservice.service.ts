@@ -13,6 +13,7 @@ export class MyserviceService {
   url1:any = 'http://localhost:3000/Login';
   url2:any = 'http://localhost:3000/Contact';
   url3:any = 'http://localhost:3000/Cart';
+  url4:any = 'http://localhost:3000/Orders';
 
   constructor(private objhttp:HttpClient, public router:Router) { 
     this.loadData();
@@ -37,7 +38,11 @@ export class MyserviceService {
   login(email: string, password: string): boolean {
     const user = this.dataArray.find(u => u.email === email && u.password === password);
     if (user) {
-      if(user.role == "admin"){this.router.navigate(['adminproduct'])}
+      if(user.role == "admin")
+      {
+        this.loggedInUser = user;
+        this.router.navigate(['adminproduct'])
+      }
       else{
         this.loggedInUser = user;
         console.log(this.loggedInUser);
@@ -66,7 +71,8 @@ export class MyserviceService {
       return this.objhttp.get<any[]>(this.url3);
     }
     removecart(id:any)
-    {
+    { 
+        console.log(id);
         return this.objhttp.delete<any>(this.url3+'/' + id);
     }
     registerUser(data:any){
@@ -100,6 +106,15 @@ export class MyserviceService {
     addUser(user: any) : Observable<any> {
       console.log(user)
       return this.objhttp.post<any>(this.url1,user);
+    }
+    addorder(data:any) : Observable<any>{
+      return this.objhttp.post<any>(this.url4,data);
+    }
+    getallorders(){
+      return this.objhttp.get(this.url4);
+    }
+    getordersById(id: number): Observable<any>{
+      return this.objhttp.get(this.url4+'/'+id);
     }
 
   getLoggedInUser() {

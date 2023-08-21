@@ -1,21 +1,21 @@
-<mat-card style="margin-left: 40%;width:20%;margin-top:5%">
+<mat-card style="margin-left: 38%;width:25%;margin-top:5%">
     <mat-card-header>
-      <mat-card-title>Login</mat-card-title>
+      <mat-card-title style="margin-left:120px;font-weight: bolder;">Login</mat-card-title>
     </mat-card-header><hr>
     <mat-card-content>
       <form #loginForm="ngForm" (ngSubmit)="onSubmit()">
   
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style="width: 100%;">
           <mat-label>Email</mat-label>
           <input matInput type="text" name="email" [(ngModel)]="email" required>
         </mat-form-field><br>
   
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="fill" style="width: 100%;">
           <mat-label>Password</mat-label>
           <input matInput type="password" name="password" [(ngModel)]="password" required>
         </mat-form-field><br>
   
-        <button mat-raised-button color="primary" type="submit">Login</button>
+        <button mat-raised-button color="primary" type="submit" style="margin-left:110px;">Login</button>
       </form><br>
       <p>Not Registered..? <a routerLink="/register">Click Here</a></p>
     </mat-card-content>
