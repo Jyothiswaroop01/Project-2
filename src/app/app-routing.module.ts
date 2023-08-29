@@ -26,7 +26,7 @@ const routes: Routes = [
   {path:'profile', component:ProfileComponent},
   {path:'Adminprofile', component:AdminprofileComponent},
   {path:'payment', component:PaymentComponent},
-  {path:'orders', component:OrdersComponent}
+  {path:'orders', component:OrdersComponent},
 ];
 
 

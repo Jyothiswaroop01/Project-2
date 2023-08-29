@@ -19,7 +19,7 @@ export class LoginComponent {
     if (this.objservice.login(this.email, this.password)) {
       console.log('Login successful');
     } else {
-      alert('Login failed');
+      alert('Incorrect Details');
     }
   }
 }

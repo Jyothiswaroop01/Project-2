@@ -44,7 +44,7 @@ import { HeaderComponent } from './User/header/header.component';
     AdminprofileComponent,
     PaymentComponent,
     OrdersComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     BrowserModule,

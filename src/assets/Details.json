@@ -34,9 +34,24 @@
       "Name": "Iphone 14 Pro",
       "Price": 119000,
       "Desc": "Deep Purple 128GB"
+    },
+    {
+      "Name": "test",
+      "Price": 23000,
+      "Desc": "testing product",
+      "Image": "C:\\fakepath\\istockphoto-1465252564-170667a-removebg-preview.png",
+      "id": 6
     }
   ],
-  "Cart": [],
+  "Cart": [
+    {
+      "id": 5,
+      "Image": "../assets/Images/5.jpg",
+      "Name": "Iphone 14 Pro",
+      "Price": 119000,
+      "Desc": "Deep Purple 128GB"
+    }
+  ],
   "Login": [
     {
       "fullName": "Nani",
