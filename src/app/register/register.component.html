@@ -1,6 +1,6 @@
-<mat-card style="margin-left: 40%;width:20%;margin-top: 5%;">
+<mat-card style="margin-left: 40%;width:20%;margin-top: 5%;background-color: brown;">
     <mat-card-header>
-      <mat-card-title>Register</mat-card-title>
+      <mat-card-title style="color: white;">Register</mat-card-title>
     </mat-card-header><hr>
     <mat-card-content>
       <form #adduser="ngForm" (ngSubmit)="onSubmit(adduser)">
@@ -21,7 +21,7 @@
   
         <button mat-raised-button color="primary" type="submit">Register</button>
       </form><br>
-      <p>Already Registered..? <a routerLink="/login">Click Here</a></p>
+      <p style="color: white;">Already Registered..? <a routerLink="/login" style="color: white;">Click Here</a></p>
     </mat-card-content>
   </mat-card>
   

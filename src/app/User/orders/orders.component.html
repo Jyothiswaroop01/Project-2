@@ -17,10 +17,12 @@
 <div *ngIf="selectedProduct">
     <mat-card style="width: 30%; margin-left: 35%;background-color:honeydew;">
         <mat-card-content>
-                <h3 style="font-weight: bold;">Selected Product Details:</h3>
-                Name: {{ selectedProduct.Name }}<br>
+                <h3 style="font-weight: bold;">Order Details:</h3>
+                Name: {{ selectedProduct.Productname }}<br>
                 Price: {{ selectedProduct.Price | currency }}<br>
-                Description: {{ selectedProduct.Desc }}<br><hr>
+                Description: {{ selectedProduct.Description }}<br>
+                Address: {{ selectedProduct.Address-1}}<br>
+                Phonenumber: {{ selectedProduct.Phonenumber}}<hr>
         </mat-card-content>
     </mat-card><br><br>
 </div>

@@ -34,22 +34,15 @@
       "Name": "Iphone 14 Pro",
       "Price": 119000,
       "Desc": "Deep Purple 128GB"
-    },
-    {
-      "Name": "test",
-      "Price": 23000,
-      "Desc": "testing product",
-      "Image": "C:\\fakepath\\istockphoto-1465252564-170667a-removebg-preview.png",
-      "id": 6
     }
   ],
   "Cart": [
     {
-      "id": 5,
-      "Image": "../assets/Images/5.jpg",
-      "Name": "Iphone 14 Pro",
-      "Price": 119000,
-      "Desc": "Deep Purple 128GB"
+      "id": 3,
+      "Image": "https://specifications-pro.com/wp-content/uploads/2021/10/Xiaomi-Redmi-Note-11-Pro-Plus-1.jpg",
+      "Name": "Redmi note 11 pro",
+      "Price": 25000,
+      "Desc": "Black 8GB 128GB"
     }
   ],
   "Login": [
@@ -78,6 +71,17 @@
       "Address-2": "hyd",
       "Phonenumber": 9652903865,
       "id": 1
+    },
+    {
+      "Productname": "Iphone 14 Pro",
+      "Description": "Deep Purple 128GB",
+      "Price": 119000,
+      "Image": "../assets/Images/5.jpg",
+      "fullName": "test",
+      "Address-1": "test",
+      "Address-2": "test",
+      "Phonenumber": 9652903865,
+      "id": 2
     }
   ]
 }
